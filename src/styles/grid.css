@@ -1,0 +1,71 @@
+/* ==========================================================================
+   12-COLUMN ARCHITECTURAL DRAFTING GRID
+   src/styles/grid.css
+   Specification: DESIGN Light.md & ARCHITECTURE.md Section 5.2
+   ========================================================================== */
+
+/* Main Container: Max-width 76rem (1216px) */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;  /* Desktop margin: 48px */
+  padding-right: 3rem;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding-left: 2rem;  /* Tablet margin: 32px */
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 1.25rem; /* Mobile safe margin: 20px */
+    padding-right: 1.25rem;
+  }
+}
+
+/* 12-Column Grid System */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem; /* Desktop gutter: 24px */
+}
+
+/* Tablet: 8-Column Grid */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .grid-12 {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1.25rem; /* Tablet gutter: 20px */
+  }
+}
+
+/* Mobile: 4-Column Fluid Stack */
+@media (max-width: 767px) {
+  .grid-12 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; /* Mobile gutter: 16px */
+  }
+}
+
+/* Column Span Utilities */
+.col-12 { grid-column: span 12; }
+.col-8  { grid-column: span 8; }
+.col-6  { grid-column: span 6; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .col-8 { grid-column: span 8; }
+  .col-6 { grid-column: span 8; }
+  .col-4 { grid-column: span 4; }
+}
+
+@media (max-width: 767px) {
+  .col-12, .col-8, .col-6, .col-4, .col-3 {
+    grid-column: span 4;
+  }
+}
