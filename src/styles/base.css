@@ -4,7 +4,9 @@
    ========================================================================== */
 
 /* Modern CSS Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,8 +29,8 @@ body {
   font-size: var(--fs-body-md);
   line-height: var(--lh-body-md);
   transition: background-color var(--duration-normal) var(--ease-tactile),
-              color var(--duration-normal) var(--ease-tactile);
-  overflow-x: hidden;
+    color var(--duration-normal) var(--ease-tactile);
+  overflow-x: clip;
 }
 
 /* Accessibility Focus Visible Standard (RULES.md Guideline 2.4.7) */
@@ -73,7 +75,12 @@ body {
 /* ==========================================================================
    Typographic Scale Classes (DESIGN Light.md / DESIGN Dark.md)
    ========================================================================== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   color: var(--ink-primary);
   font-weight: 400;
@@ -172,7 +179,8 @@ a {
   transition: color var(--duration-fast) var(--ease-tactile);
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -204,7 +212,10 @@ img, svg {
 
 /* Motion Optimization (RULES.md Guideline 6) */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

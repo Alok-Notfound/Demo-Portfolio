@@ -1,14 +1,23 @@
 export const profileData = {
   name: "Aalok Kumar",
   titles: "Computer Science Engineering Student • Frontend Developer • Aspiring Software Developer",
-  location: "Jharkhand, India",
+  location: "Hazaribagh, Jharkhand, India",
   email: "alokp0039@gmail.com",
   github: "https://github.com/Alok-Notfound",
   githubHandle: "github.com/Alok-Notfound",
   linkedin: "https://linkedin.com/in/aalok-kumar-7a4098428/",
   linkedinHandle: "linkedin.com/in/aalok-kumar-7a4098428/",
-  aboutMe: "I am a Computer Science Engineering student with a strong interest in frontend development and software engineering. I enjoy building clean, responsive, and user-friendly web interfaces while continuously improving my programming and problem-solving skills. I am passionate about learning new technologies, working on practical projects, and turning ideas into functional digital experiences. My goal is to grow as a software developer and contribute to meaningful, real-world projects.",
-  careerGoal: "To grow as a versatile software developer by combining frontend development, software engineering, and AI technologies to build practical, user-focused solutions.",
+  aboutMe: "I’m a college student passionate about technology, with a strong interest in UI/UX Design, AI & AI Agents, and Software Development. I enjoy exploring new technologies, experimenting with ideas, and turning them into practical and engaging digital experiences.",
+  careerGoal: "Job / Placement & Freelancing",
+  aboutHighlights: [
+    { icon: "🎓", label: "Status", value: "College Student" },
+    { icon: "📍", label: "Location", value: "Hazaribagh, Jharkhand, India" },
+    { icon: "💻", label: "Focus Areas", value: "UI/UX Design, AI & AI Agents, Software Development" },
+    { icon: "🛠️", label: "Interests", value: "Web Development, Cybersecurity, Automation, Gaming & Emerging Technologies" },
+    { icon: "🚀", label: "Projects", value: "Creative, experimental, and practical tech projects" },
+    { icon: "🎯", label: "Career Goal", value: "Job / Placement & Freelancing" },
+    { icon: "🧠", label: "Approach", value: "Learn, experiment, build, and continuously improve" }
+  ],
   skills: {
     programming: ["C", "Java", "Python", "JavaScript"],
     frontend: ["HTML", "CSS", "React"],
